@@ -38,7 +38,7 @@
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="lw8-Ty-YLA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="lw8-Ty-YLA" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lw8-Ty-YLA" id="xue-2k-H4V">
@@ -48,7 +48,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMf-HX-2Qf">
                                                     <rect key="frame" x="8" y="8" width="327" height="133.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-Or-UX2">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VWJetta" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-Or-UX2">
                                                             <rect key="frame" x="8" y="17" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="efh-xW-v06"/>
@@ -109,6 +109,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="details" destination="hb1-0r-yIl" id="8qh-cD-kYd"/>
+                                            <outlet property="price" destination="eFg-cw-HGy" id="dOl-Oc-3bF"/>
+                                            <outlet property="thumb" destination="FPq-Or-UX2" id="n1x-xa-KNg"/>
+                                            <outlet property="title" destination="3dj-nd-eCE" id="0dm-6b-749"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -128,6 +134,10 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="uFs-Mh-U5D" id="K4k-t9-bLn"/>
+                        <outlet property="tableView" destination="o46-Zu-ju3" id="lKF-Bx-bU5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,4 +166,7 @@
             <point key="canvasLocation" x="29.600000000000001" y="691.304347826087"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VWJetta" width="599" height="284"/>
+    </resources>
 </document>
