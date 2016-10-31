@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482C77871DC7E7480077994B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C77861DC7E7480077994B /* MaterialView.swift */; };
 		48E658D01DBE8E82008926C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E658CF1DBE8E82008926C4 /* AppDelegate.swift */; };
-		48E658D21DBE8E82008926C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E658D11DBE8E82008926C4 /* ViewController.swift */; };
+		48E658D21DBE8E82008926C4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E658D11DBE8E82008926C4 /* MainVC.swift */; };
 		48E658D51DBE8E82008926C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E658D31DBE8E82008926C4 /* Main.storyboard */; };
 		48E658D81DBE8E82008926C4 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48E658D61DBE8E82008926C4 /* DreamLister.xcdatamodeld */; };
 		48E658DA1DBE8E82008926C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E658D91DBE8E82008926C4 /* Assets.xcassets */; };
@@ -24,9 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482C77861DC7E7480077994B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		48E658CC1DBE8E82008926C4 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E658CF1DBE8E82008926C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48E658D11DBE8E82008926C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48E658D11DBE8E82008926C4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		48E658D41DBE8E82008926C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48E658D71DBE8E82008926C4 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		48E658D91DBE8E82008926C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 				48E658E51DBE8FAB008926C4 /* View */,
 				48E658E41DBE8FA3008926C4 /* Controller */,
 				48E658CF1DBE8E82008926C4 /* AppDelegate.swift */,
-				48E658D11DBE8E82008926C4 /* ViewController.swift */,
+				48E658D11DBE8E82008926C4 /* MainVC.swift */,
 				48E658D31DBE8E82008926C4 /* Main.storyboard */,
 				48E658D91DBE8E82008926C4 /* Assets.xcassets */,
 				48E658DB1DBE8E82008926C4 /* LaunchScreen.storyboard */,
@@ -97,6 +99,7 @@
 		48E658E51DBE8FAB008926C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				482C77861DC7E7480077994B /* MaterialView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -150,7 +153,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Matthew;
 				TargetAttributes = {
 					48E658CB1DBE8E82008926C4 = {
@@ -199,7 +202,8 @@
 				48E658F21DBE9202008926C4 /* Item+CoreDataProperties.swift in Sources */,
 				48E658F11DBE9202008926C4 /* Item+CoreDataClass.swift in Sources */,
 				48E658F41DBE9202008926C4 /* ItemType+CoreDataProperties.swift in Sources */,
-				48E658D21DBE8E82008926C4 /* ViewController.swift in Sources */,
+				482C77871DC7E7480077994B /* MaterialView.swift in Sources */,
+				48E658D21DBE8E82008926C4 /* MainVC.swift in Sources */,
 				48E658F61DBE9202008926C4 /* Store+CoreDataProperties.swift in Sources */,
 				48E658F01DBE9202008926C4 /* Image+CoreDataProperties.swift in Sources */,
 				48E658F31DBE9202008926C4 /* ItemType+CoreDataClass.swift in Sources */,
@@ -250,6 +254,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -300,6 +305,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -370,6 +376,7 @@
 				48E658E31DBE8E82008926C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
